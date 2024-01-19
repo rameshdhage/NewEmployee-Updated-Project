@@ -70,11 +70,6 @@ public class EmployeeController {
 	}
 	
 	
-	@GetMapping("/getEmpBySalary/{salary}")
-	public List<Employee> getEmployeeSalary(@PathVariable Integer salary){
-		 List <Employee >emplist=employeeService.getEmployeeBysalary(salary);
-		 return emplist;
-	}
 	
 	
 	@DeleteMapping("deleteEmp/{id}")

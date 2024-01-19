@@ -19,7 +19,6 @@ public interface EmployeeService {
 	
 	public List<Employee> getEmployeeBycity(String empCity);
 	
-	public List<Employee> getEmployeeBysalary(Integer salary);
 	
 	
 	public String deleteEmp(int id);

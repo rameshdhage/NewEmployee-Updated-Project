@@ -61,12 +61,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return emplist;
 	}
 
-	@Override
-	public List<Employee> getEmployeeBysalary(Integer salary) {
-     List<Employee> emplist= repository.getEmployeeByempSalary(salary);
-		return emplist;
-	}
-
+	
 	
 	
 

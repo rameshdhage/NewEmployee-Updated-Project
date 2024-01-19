@@ -20,7 +20,6 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer>{
 	
 	public List<Employee> getEmployeeByempCity(String empCity);
 	
-	public List<Employee> getEmployeeByempSalary(Integer salary);
 	
 
 
