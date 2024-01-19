@@ -61,6 +61,22 @@ public class EmployeeController {
 		 return empList;
 	}
 	
+	
+	@GetMapping("/getEmpByCity/{empCity}")
+	public List<Employee> getEmployeeByCity(@PathVariable String empCity){
+		
+	List<Employee>	emplist=employeeService.getEmployeeBycity(empCity);
+		return emplist;
+	}
+	
+	
+	@GetMapping("/getEmpBySalary/{salary}")
+	public List<Employee> getEmployeeSalary(@PathVariable Integer salary){
+		 List <Employee >emplist=employeeService.getEmployeeBysalary(salary);
+		 return emplist;
+	}
+	
+	
 	@DeleteMapping("deleteEmp/{id}")
 	public void deleteEmp(@PathVariable int id) {
 		employeeService.deleteEmp(id);

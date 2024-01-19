@@ -55,6 +55,19 @@ public class EmployeeServiceImpl implements EmployeeService {
 		return "employee delete successfully";
 	}
 
+	@Override
+	public List<Employee> getEmployeeBycity(String empCity) {
+	List <Employee>	emplist=repository.getEmployeeByempCity(empCity);
+		return emplist;
+	}
+
+	@Override
+	public List<Employee> getEmployeeBysalary(Integer salary) {
+     List<Employee> emplist= repository.getEmployeeByempSalary(salary);
+		return emplist;
+	}
+
+	
 	
 
 }

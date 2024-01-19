@@ -17,6 +17,11 @@ public interface EmployeeRepository extends CrudRepository<Employee, Integer>{
 	
 	@Query(value="select * from employee where emp_name=? order by salary desc" , nativeQuery =true)
 	public List<Employee> getEmployeeByName(String empName);
+	
+	public List<Employee> getEmployeeByempCity(String empCity);
+	
+	public List<Employee> getEmployeeByempSalary(Integer salary);
+	
 
 
 	
